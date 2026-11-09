@@ -1,0 +1,16 @@
+{
+  "bomFormat": "CycloneDX", "specVersion": "1.5",
+  "serialNumber": "urn:uuid:3e671687-395b-41f5-a30f-a58921a69b79", "version": 1,
+  "metadata": {"timestamp": "2026-10-01T10:00:00Z",
+    "tools": {"components": [{"type": "application", "name": "syft", "version": "1.14.0"}]},
+    "component": {"type": "application", "name": "auth-service", "version": "2.1.0"}},
+  "components": [
+    {"type": "library", "name": "requests", "version": "2.31.0", "purl": "pkg:pypi/requests@2.31.0",
+     "licenses": [{"license": {"id": "Apache-2.0"}}]},
+    {"type": "library", "name": "urllib3", "version": "1.26.18", "purl": "pkg:pypi/urllib3@1.26.18",
+     "licenses": [{"license": {"id": "MIT"}}]},
+    {"type": "library", "name": "openssl", "version": "3.0.13", "purl": "pkg:deb/debian/openssl@3.0.13?arch=amd64&distro=debian-12",
+     "licenses": [{"expression": "Apache-2.0"}]},
+    {"type": "library", "name": "internal-utils", "version": "0.4.2", "purl": "pkg:generic/acme/internal-utils@0.4.2"}
+  ]
+}

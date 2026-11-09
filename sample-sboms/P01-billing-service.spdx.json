@@ -1,0 +1,16 @@
+{
+  "spdxVersion": "SPDX-2.3", "dataLicense": "CC0-1.0", "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "billing-service", "documentNamespace": "https://example.com/spdx/billing-service-1",
+  "creationInfo": {"created": "2026-10-01T10:00:00Z", "creators": ["Tool: syft-1.14.0", "Organization: Example"]},
+  "packages": [
+    {"SPDXID": "SPDXRef-Package-1", "name": "requests", "versionInfo": "2.31.0", "downloadLocation": "NOASSERTION",
+     "licenseConcluded": "Apache-2.0", "licenseDeclared": "Apache-2.0", "supplier": "Organization: PSF",
+     "externalRefs": [{"referenceCategory": "PACKAGE-MANAGER", "referenceType": "purl", "referenceLocator": "pkg:pypi/requests@2.31.0"}]},
+    {"SPDXID": "SPDXRef-Package-2", "name": "openssl", "versionInfo": "3.0.13", "downloadLocation": "NOASSERTION",
+     "licenseConcluded": "Apache-2.0",
+     "externalRefs": [{"referenceCategory": "PACKAGE-MANAGER", "referenceType": "purl", "referenceLocator": "pkg:deb/debian/openssl@3.0.13?distro=debian-12&arch=amd64"}]},
+    {"SPDXID": "SPDXRef-Package-3", "name": "lodash", "versionInfo": "4.17.21", "downloadLocation": "NOASSERTION",
+     "licenseConcluded": "MIT",
+     "externalRefs": [{"referenceCategory": "PACKAGE-MANAGER", "referenceType": "purl", "referenceLocator": "pkg:npm/lodash@4.17.21"}]}
+  ]
+}

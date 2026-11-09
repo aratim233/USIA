@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #f4f6f9; color: #1d2733; font-size: 14px; }
+h2 { margin: 0 0 16px; } h3 { margin: 0 0 10px; font-size: 16px; } h4 { margin: 8px 0; }
+a { color: #1f5fbf; text-decoration: none; }
+.muted { color: #6b7785; } .small { font-size: 12px; }
+.mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; word-break: break-all; }
+
+.shell { display: flex; min-height: 100vh; }
+aside { width: 220px; background: #14213d; color: #fff; padding: 18px 0; display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; }
+aside .brand { font-weight: 700; font-size: 20px; padding: 0 20px 20px; }
+aside .brand span { display: block; font-weight: 400; font-size: 13px; opacity: .7; }
+aside a { color: #cfd8e3; padding: 10px 20px; }
+aside a.active, aside a:hover { background: #1f3460; color: #fff; }
+aside .user { margin-top: auto; padding: 0 20px; font-size: 13px; }
+aside .user button { display: block; margin-top: 8px; width: 100%; }
+main { flex: 1; padding: 24px 32px; max-width: 1400px; }
+
+.card { background: #fff; border: 1px solid #e1e6ec; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.inline { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; margin: 8px 0; }
+.inline h3 { width: 100%; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 4px 0; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.sub { border-left: 3px solid #d5dde8; padding-left: 12px; margin: 10px 0; }
+.sv { background: #f8fafc; border-radius: 6px; padding: 8px 12px; margin: 6px 0; }
+
+input, select { padding: 7px 9px; border: 1px solid #c9d2dd; border-radius: 5px; font: inherit; }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #4a5664; margin-bottom: 8px; }
+label.check { flex-direction: row; align-items: center; }
+button { padding: 7px 12px; border: 1px solid #c9d2dd; background: #fff; border-radius: 5px; cursor: pointer; font: inherit; }
+button:hover { background: #f0f3f7; } button:disabled { opacity: .5; cursor: default; }
+button.primary { background: #1f5fbf; color: #fff; border-color: #1f5fbf; }
+button.danger { color: #b42318; border-color: #f1b5ae; }
+button.link { border: 0; background: none; color: #b42318; padding: 0 6px; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid #edf0f4; vertical-align: top; }
+th { font-size: 12px; color: #6b7785; font-weight: 600; }
+tr.formrow td { background: #fafbfc; } tr.formrow input { width: 100%; }
+
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+.tile { background: #fff; border: 1px solid #e1e6ec; border-radius: 8px; padding: 16px; }
+.tile .v { font-size: 26px; font-weight: 700; } .tile .k { color: #6b7785; font-size: 12px; margin-top: 4px; }
+
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; background: #eef1f5; color: #4a5664; }
+.badge.ACTIVE { background: #e3f4e8; color: #19723a; } .badge.EXPIRING { background: #fff2d6; color: #8a5a00; }
+.badge.EXPIRED { background: #fde7e5; color: #b42318; } .badge.PENDING { background: #e8eefb; color: #1f5fbf; }
+
+.info { background: #e8eefb; border: 1px solid #c3d3f3; padding: 10px 12px; border-radius: 6px; margin-bottom: 12px; cursor: pointer; }
+.error { background: #fde7e5; border: 1px solid #f1b5ae; color: #8b1b12; padding: 10px 12px; border-radius: 6px; margin: 8px 0; }
+
+.login-wrap { min-height: 100vh; display: grid; place-items: center; background: #14213d; }
+.login { width: 380px; } .login h1 { margin: 0; font-size: 22px; } .login button { width: 100%; margin-top: 8px; }
+
+/* retention & compliance */
+.policy-form label.grow { flex: 1 1 220px; }
+.policy-form label.grow input { width: 100%; }
+.policy-form > label input { width: 100%; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 10px; }
+.chip { display: inline-block; padding: 2px 9px; border-radius: 10px; font-size: 12px; background: #e8eefb; color: #1f5fbf; }
+.chip.off { background: #eef1f5; color: #6b7785; text-decoration: line-through; }
+.badge.NOT.DELIVERED, .badge.NONE { background: #eef1f5; color: #4a5664; }
+button.link-blue { border: 0; background: none; color: #1f5fbf; padding: 0 6px; }
